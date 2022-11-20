@@ -3,7 +3,7 @@
 //  Flash Chat iOS13
 //
 //  Created by Angela Yu on 21/10/2019.
-//  Copyright © . All rights reserved.
+//  Copyr rights reserved.
 //
 
 import UIKit
