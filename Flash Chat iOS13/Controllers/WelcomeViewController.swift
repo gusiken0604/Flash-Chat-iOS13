@@ -14,8 +14,20 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.adjustsFontSizeToFitWidth = true //文字を見切れさせない
 
-       
+        titleLabel.text = ""
+        var charIndex = 0.0
+        let titleText = K.appName
+                for letter in titleText {
+                    Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (Timer) in
+                        self.titleLabel.text?.append(letter)
+                    }
+                    charIndex += 1
+                }
+        
+        
     }
     
 
